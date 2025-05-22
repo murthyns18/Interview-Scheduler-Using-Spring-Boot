@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, pink, yellow);
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background-color: #2f2626;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+    background-color: #2980b9;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.update-date-section {
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    border: 1px solid lightseagreen;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.update-date-section h2 {
+    border-radius: 10px;
+    color: teal;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-input {
+    margin-bottom: 20px;
+}
+
+.form-input label {
+	text-align:center;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-input input[type="datetime-local"] {
+    width: 100%;
+	box-sizing:border-box;
+    padding: 10px;
+    border: 2px solid lightseagreen;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.save-btn {
+    padding: 12px 25px;
+    margin-right:10px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+     text-decoration: none;
+    display: inline-block;
+}
+
+.btns{
+	display:flex;
+	justify-content:center;
+	
+}
+
+.save-btn:hover {
+    background-color: #006666;
+}
+
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .update-date-section {
+        padding: 15px;
+    }
+}

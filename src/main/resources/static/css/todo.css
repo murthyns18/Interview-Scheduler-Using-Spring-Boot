@@ -1,0 +1,262 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: sans-serif;
+    background-image: linear-gradient(to right, pink, yellow);
+}
+
+
+.navbar {
+    background-color:#2f2626;
+    color: white;
+    padding: 8px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    background-color: pink;
+    font-weight: bold;
+    color: Black;
+    font-size:15px;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-btn:hover {	
+    background-color:#fc8eac;
+}
+
+.nav-btn:hover:active{
+	transform: scale(0.9);
+	
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    max-width: 1200px;
+    padding: 20px 0;
+    margin: 20px auto;
+    
+}
+
+.list-section {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+    max-height: 600px;
+    max-width: 100%;  
+    box-sizing: border-box;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    color: #333;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 5px 5px;
+    border: 2px solid lightseagreen;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    border-color: teal;
+    box-shadow: 0 0 8px rgba(0, 139, 139, 0.3);
+}
+
+.table-container {
+    height: 500px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: auto;  
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
+    color: blue;
+    padding: 10px;
+    border: 1px solid #ddd;
+    z-index: 10;
+}
+
+tbody td {
+    padding: 12px 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    color: purple;
+}
+
+thead th, tbody td {
+    white-space: normal;
+}
+
+.interview-date {
+    font-weight: bold;
+    color: green;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.not-scheduled {
+    font-size: 13px;
+    color: #d32f2f;
+    background-color: #ffe6e6;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.action-links a {
+    margin: 0 8px;
+    padding: 4px 10px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.action-links .delete-link{
+	color: white;
+	background-color: red;
+	
+}
+
+.action-links .delete-link:hover, .update-link:hover{
+	text-decoration: underline;
+}
+
+.action-links .delete-link:active{
+	transform:scale(0.9);
+}
+.action-links .update-link:active{
+	transform:scale(0.9);
+}
+
+.notification-btn:active{
+	 transform: scale(0.9);
+}
+.notification-btn {
+    background-color:pink;
+    color: black;
+    padding: 6px 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.notification-btn i {
+    margin-right: 3px;
+}
+
+.notification-btn:hover {
+    background-color:#fc8eac;
+}
+
+.search-btn-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: pink;
+    color: black;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.search-btn-wrapper input {
+    border: none;
+    outline: none;
+    margin-left: 8px;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .table-container {
+        height: 400px;
+    }
+    
+    table {
+        font-size: 14px;
+    }
+    
+    thead th, tbody td {
+        padding: 8px 6px;
+    }
+    
+    .action-links a {
+        font-size: 12px;
+        margin: 0 3px;
+    }
+}

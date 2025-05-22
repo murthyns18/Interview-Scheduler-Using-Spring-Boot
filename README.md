@@ -4,7 +4,7 @@ This is a full-stack **Interview Scheduler** application developed using **Sprin
 
 **Features**
 
-- Full CRUD operations for interview tasks
+- CRUD operations for interview tasks
 - Schedule interview date and time
 - Automatic daily email reminders for upcoming interviews
 - Layered architecture with Controller, Service, Repository
